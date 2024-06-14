@@ -24,6 +24,7 @@ namespace Drastic.SDWebImage
 
 #if IOS
 	// @interface FLAnimatedImageView : UIImageView
+	/*
 	[BaseType (typeof (UIImageView))]
 	interface FLAnimatedImageView
 	{
@@ -46,8 +47,8 @@ namespace Drastic.SDWebImage
 		// @property (copy, nonatomic) NSString * runLoopMode;
 		[Export ("runLoopMode")]
 		string RunLoopMode { get; set; }
-	}
-
+	}*/
+/*
 	// @interface FLAnimatedImage : NSObject
 	[BaseType (typeof (NSObject))]
 	interface FLAnimatedImage
@@ -107,6 +108,7 @@ namespace Drastic.SDWebImage
 		[Export ("data", ArgumentSemantic.Strong)]
 		NSData Data { get; }
 	}
+	*/
 #endif
 
 interface ISDWebImageOperation { }
@@ -455,6 +457,7 @@ interface ISDWebImageOperation { }
 	}
 
 #if IOS
+/*
 	// @interface WebCache (FLAnimatedImageView)
 	[Category]
 	[BaseType (typeof (FLAnimatedImageView))]
@@ -488,6 +491,7 @@ interface ISDWebImageOperation { }
 		[Export ("sd_setImageWithURL:placeholderImage:options:progress:completed:")]
 		void SetImage ([NullAllowed] NSUrl url, [NullAllowed] UIImage placeholder, SDWebImageOptions options, [NullAllowed] SDWebImageDownloaderProgressHandler progressHandler, [NullAllowed] SDExternalCompletionHandler completedHandler);
 	}
+	*/
 #endif
 
 	// @interface ImageContentType (NSData)
